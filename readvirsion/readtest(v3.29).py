@@ -23,7 +23,6 @@ def readtest(f):
         i=i+1;
         a=f.readline()
         if("#" in a):
-#           print(j)
            break
         b=a.strip('\n')
         if(i%2==0):
@@ -38,12 +37,10 @@ def readtest(f):
              print(eval(c[2]))
              print('tic',n+1)
     print('tic',n+1,'over')
-    print("**************************************************************************************")
-      print("                                                                   ")
     return f
     
 inputnum()
-f=open(r'C:\Users\Administrator\Desktop\质谱数据处理\3.24\3.23大肠杆菌第一次.txt', 'r')
+f=open(r'C:\Users\Administrator\Desktop\MSANAL\3.24\3.23大肠杆菌第一次.txt', 'r')
 for n in range(first-1,last):
  f=readtest(f)
  f.readline()
